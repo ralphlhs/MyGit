@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class CreateObject2 : MonoBehaviour
 {
+
     public GameObject prefab;
 
     private GameObject square;
@@ -15,7 +16,7 @@ public class CreateObject2 : MonoBehaviour
 
        // Destroy(square, 5.0f);
     }
-
+    //int x = Random.Range(1, 45);
     // Update is called once per frame
     void Update()
     {

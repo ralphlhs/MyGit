@@ -113,7 +113,51 @@ Standard Assets : 기본제공
 Streaming Assets : ios 동영상 파일
 
 
+++++++++++++++++++++++++2월 5일 수업++++++++++++++
+1. 터레인 2. 슈팅게임 3. 텍스트메쉬프로 4. 프로빌더 5. 스카이박스
 
+터레인 작업후 F를 누르면 맵보기 편함.
+터레인 : 3d 프로젝트에서 사용하는 맵제작용 도구
+	나무 배치툴, 브러시 툴제공
+	텍스처 활용으로 페인팅 기능.
+	터레인 관련 작업 기능
+	1. 고도 설정, 
+	Raise or lower (좌클릭->지형 올리기, shift+좌틀릭 -> 지형 내리기)
+	Terrain, Stamp 
+터레인 레이어 분석
+Diffuse : 물체에 깊이감과 입체감을 부여, 표면에 색을 부여하는 요소.
+Normal Map : 입체상의 x, y, z 좌표들을 탄젠트 함수로 변환해 RGB좌표로 만든 그림 >> 평면상에높이 값이 있는 것처럼 빛 반사 처리를 바꾸어주는 역할.
+Normal Scale : 노말 맵에서 설정 할 수 있는 스케일 값입니다.
+0 ; 조명 계산에 아무 영향을 미치지 않습니다.
+1 : 100%
+2 : 더 뚜렷하게 나타남
+-1 : 반대방향 처리.
+
+
+Mask Map : 고해상도에서 사용하는 텍스처 설정
+메탈릭, 평활도, 타일링 설정 등을 잡을 수 있습니다.
+
+1. Play On Awake 설정 제거
+2. Looping제거로 반복제거.
+3. Start Lifetime = 1 (파티클 생명주기(지속시간)을 1초)
+4. Emission에 Bursts기능 활성화 : (파티클 시스템의 방출속도와 타이밍을 설정하는 모듈)
+
+이미션 기본 설정값
+Rate over Time : 시간 단위 당 방출되는 파티클 수
+Rate over Distance : 이동 거리당 방출되는 파티클 수
+
+버스트 설정값
+Time : 버스트 방출 시점
+Count : 버스트할 파티클 갯수
+Cycles : 버스트를 반복할 횟수
+Interval : 버스트 반복되는 시간 사이의 간격 설정.
+Probability : 파티클 생성 가능성 체크. 값이 1일 경우 100% 생성
+
+모양 설정, Sphere, 
+
+TMP 전용 폰트만들기
+메쉬프로는 한글깨지는 경향이 있어서 전용폰트 설정을 진행해줘야함.
+FontAssetCreator
 
 
 
@@ -130,7 +174,42 @@ Ctl +  Shift + F : 찾기
 F9 : 디버깅
 F9 -> 디버그 실행 -> 창 -> 디스어셈블리(어셀블리어를 보여줌)
 
+자료형으로 메모리 공간 만들기
 
+byte
+
+int - 대부분 자료형
+char- 2바이트 utf-16 -> 인코딩 디코딩
+bool - 비교 연산자, 논리 연산자 if
+float - unity좌표계, vector
+
+변수
+int 변수명 : camelCase
+변수명 = 1;
+
+변수가 여러개 배열
+
+int[] 배열명 = new int[10];
+for (int i = 0; i<10 ; i++) { }
+IEnumerator, IEnumerable
+
+반복자, coroutine, yield
+
+ArrayList, LinkedList, Dictionary, Hashtable 구현
+foreach(var data in 배열명) { }
+
+While(엔진이 실행) { }
+
+----> 곱하기 나누기 최적화
+complier 최적화 -> bit연산 -> Layer -> 코데 -> 최적화
+움직이는거 만들었음. 절차지향 프로그래밍 -> 객체지향 프로그래밍.(다수의 사람이 작업하기 좋음. 협업)
+cout
+
+c#  --> 객체지향으로만 되어 있어요. --> tool
+c++  --> 반만 객체지향. C --> 메인 로직 --> 하드웨어 렌더링
+class Hello{
+public static int main(String args[]) { }
+}
 
 +++++++++++++++++++++++++++++++++++깃허브+++++++++++++++++++++++++++++++++++++++++++++++
 Repository : 저장소
