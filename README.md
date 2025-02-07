@@ -32,7 +32,6 @@ public class AudioPlay_LHS : MonoBehaviour
 	Bypass Reverb Zones : 리버브 존을 키거나 끄는 효과
 	리버브 존 : 오디오 리스너의 위치에 따라 잔향 효과를 설정하는 도구.
 play On Awake : 씬이 실행되는 시점에 사운드 재생. 비활성화시 Play() 명령을 통해 재생.
-![Image](https://github.com/user-attachments/assets/a506e55d-dad6-46aa-97cb-39e273b9dacb)
 Loop : 무한히 도는거.
 
 Priority : 오디오 소스의 우선순위 
