@@ -5,6 +5,14 @@
 ##### H5
 ###### H6
 
+|제목|내용|설명|
+|:------|---:|:---:|
+|sample1|content1|description01|
+|sample2|content2|description02|
+||||
+|sample3|content3|description03|
+||||
+
 ```cs
 using UnityEngine;
 
@@ -19,6 +27,7 @@ public class AudioPlay_LHS : MonoBehaviour
 + 2025-02-07
 	+ 유니티 사운드
 		+ 유니티 오디오 소스
+<H>-----</H>
 
 **2월 6일 수업**
 > 오디오 소스(Audio Source)
